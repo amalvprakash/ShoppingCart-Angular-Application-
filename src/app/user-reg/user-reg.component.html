@@ -1,0 +1,56 @@
+<app-usernavbar></app-usernavbar>
+<div class="container">
+    <div class="row">
+        
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <br><br><br>
+            <div class="row g-3">
+                <h1 style="color: navy;text-align:center;margin-top: 50px;">Registration</h1>
+
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Name</label>
+                    <input type="text" name="name" [(ngModel)]="name" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Address</label>
+                    <input type="text" name="address" [(ngModel)]="address" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Phone Number</label>
+                    <input type="text" name="phone" [(ngModel)]="phone" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Email Id</label>
+                    <input type="text" name="emailId" [(ngModel)]="emailId" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Username</label>
+                    <input type="text" name="username" [(ngModel)]="username" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">Password</label>
+                    <input type="password" name="password" [(ngModel)]="password" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Confirm Password</label>
+                    <input type="password" name="confirm" [(ngModel)]="confirm" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="row g-3 mt-1">
+                        <a class="nav-link" routerLink="/userLogin">Login</a>
+                    </div>
+                </div>
+
+            </div>
+            <br><br>
+            <h1 style="font-size: 30px;color: navy;text-align: center;">Read Me</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates similique, accusantium tenetur aliquam enim consectetur ducimus, quaerat aperiam et quidem beatae praesentium sit aspernatur facilis omnis quae atque maxime nam?
+            Eius, hic iure facere cum beatae fuga neque dicta. Totam sint sit doloremque eligendi placeat, velit soluta hic explicabo quae non nihil iure, itaque impedit, expedita veritatis consequatur nulla aliquam!
+            Repudiandae minus aut veritatis ex ab labore voluptate, praesentium neque autem eveniet iste laboriosam excepturi est libero, sequi modi esse placeat natus assumenda! Quo inventore corporis ad nulla aliquam suscipit.
+            Similique nobis rem quisquam sequi illum exercitationem maiores molestiae. Voluptates nesciunt consequuntur corrupti commodi, harum quam. Commodi aspernatur repudiandae vitae, magnam consequuntur voluptatem. Molestias, quos voluptatem alias a incidunt asperiores.</p>
+        </div>
+    </div>
+</div>

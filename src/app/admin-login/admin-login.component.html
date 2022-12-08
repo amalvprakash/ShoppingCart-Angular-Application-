@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl 12">
+            <h1 style="color: navy;text-align:center;margin-top: 100px;">Admin Login</h1>
+            <div class="row g-3 mt-5">
+
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Username</label>
+                    <input name="username" [(ngModel)]="username" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Password</label>
+                    <input name="password" [(ngModel)]="password" type="password" class="form-control">
+                </div>
+                <div>
+                    <button (click)="login()" class="btn btn-primary" routerLink="/entry">Login</button>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="row g-3 mt-5">
+                        <a class="nav-link" routerLink="/userLogin">Login</a>
+                        <a class="nav-link" routerLink="/userReg">New User!!...SignUp</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
