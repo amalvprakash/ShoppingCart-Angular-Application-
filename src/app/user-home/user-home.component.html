@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/adminHome">Shopping Cart</a>
+      <a class="navbar-brand">Shopping Cart</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,8 +32,9 @@
                             <img width="200px" height ="200px" src="{{i.image}}" class="card-img-top" alt="...">
                             <div class="card-body">
                               <h5 class="card-title">{{i.name}}</h5>
-                              <p class="card-text" >Patient Id : {{i.price}}</p>
-                              <p class="card-text" >Address : {{i.catagory}}</p>
+                              <p class="card-text" >Price : {{i.price}}</p>
+                              <p class="card-text" >Catagory : {{i.catagory}}</p>
+                              <button type="button" class="btn btn-outline-primary">Buy Now</button>
                             </div>
                         </div>
                     </div>
@@ -49,6 +50,7 @@
                               <h5 class="card-title">{{i.name}}</h5>
                               <p class="card-text" >Patient Id : {{i.price}}</p>
                               <p class="card-text" >Address : {{i.catagory}}</p>
+                              <button type="button" class="btn btn-outline-primary">Buy Now</button>
                             </div>
                         </div>
                     </div>

@@ -17,16 +17,19 @@ export class UserloginComponent {
       "username":this.username,
       "password":this.password
     }
-    console.log(data)
+    // console.log(data)
     
     this.api.Authentication(data).subscribe(
       (response:any)=>{
-        if (response.length == 0) {
-          alert("invalid credentials")
-        } else {
-          alert("ahgvahvahvahv credentials")
-
+        if (response.status == "success") {
+          console.log("success")
+          let userid =  response.id
+          console.log(userid)
+          localStorage.setItem("userInfo",userid)
           this.route.navigate(["/userHome"])
+
+        } else {
+          alert("invalid credentials")
         }
       }
     )
